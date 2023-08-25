@@ -32,6 +32,9 @@ class _CartPageState extends State<CartPage> {
                 'Your Cart',
                 style: TextStyle(fontSize: 20),
               ),
+              SizedBox(
+                height: 20,
+              ),
 
               // list of the cart
               Expanded(
