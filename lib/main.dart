@@ -1,6 +1,6 @@
 import 'package:coffee_shop_1/models/coffee_list.dart';
 
-import 'package:coffee_shop_1/pages/landing_page.dart';
+import 'package:coffee_shop_1/pages/splash/splash_1.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => CoffeeList(),
       builder: (context, child) => const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: LandingPage(),
+        home: SplashPages(),
       ),
     );
   }

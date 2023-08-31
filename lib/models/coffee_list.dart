@@ -6,6 +6,25 @@ class CoffeeList extends ChangeNotifier {
   //coffee for sale list(konsi-konsi coffe hai esa)
 
   final List<Coffee> _shop = [
+    Coffee(
+        name: 'Long Black',
+        price: '250',
+        imagePath: 'assets/images/coffee.png'),
+
+    //latte
+    Coffee(name: 'Latte', price: '350', imagePath: 'assets/images/latte.png'),
+
+    //espresso
+    Coffee(
+        name: 'Espresso',
+        price: '200',
+        imagePath: 'assets/images/expresso.png'),
+
+    //iced coffee
+    Coffee(
+        name: 'Iced Coffee',
+        price: '400',
+        imagePath: 'assets/images/icedcoffee.png'),
     //black coffee
     Coffee(
         name: 'Long Black',

@@ -32,7 +32,7 @@ class _CartPageState extends State<CartPage> {
                 'Your Cart',
                 style: TextStyle(fontSize: 20),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
 

@@ -43,13 +43,65 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Scaffold.of(context).openDrawer();
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu,
-                  color: const Color.fromARGB(255, 68, 40, 30),
+                  color: Color.fromARGB(255, 68, 40, 30),
                 )),
           )),
       drawer: Drawer(
         backgroundColor: const Color.fromARGB(255, 68, 40, 30),
+        child: Column(
+          children: [
+            DrawerHeader(
+              child: Image.asset('assets/images/1.png'),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Divider(
+                color: backgroundcolor,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.home,
+                  color: backgroundcolor,
+                ),
+                title: Text(
+                  'Home',
+                  style: TextStyle(color: backgroundcolor),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.info,
+                  color: backgroundcolor,
+                ),
+                title: Text(
+                  'About',
+                  style: TextStyle(color: backgroundcolor),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.login,
+                  color: backgroundcolor,
+                ),
+                title: Text(
+                  'Login/Register',
+                  style: TextStyle(color: backgroundcolor),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
       body: _pages[_selectedIndex],
     );
