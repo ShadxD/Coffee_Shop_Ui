@@ -35,6 +35,22 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: MyBottomNavBar(
         onTabChange: (index) => navigateBottonBar(index),
       ),
+      appBar: AppBar(
+          backgroundColor: backgroundcolor,
+          elevation: 0,
+          leading: Builder(
+            builder: (context) => IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                icon: Icon(
+                  Icons.menu,
+                  color: const Color.fromARGB(255, 68, 40, 30),
+                )),
+          )),
+      drawer: Drawer(
+        backgroundColor: const Color.fromARGB(255, 68, 40, 30),
+      ),
       body: _pages[_selectedIndex],
     );
   }
