@@ -39,32 +39,6 @@ class SplashPage2 extends StatelessWidget {
                   fontSize: 15, color: Color.fromARGB(255, 68, 40, 30)),
             ),
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const HomePage(),
-                  ));
-            },
-            child: Container(
-              width: screenSize.width / 1.1,
-              padding: const EdgeInsets.all(25),
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 68, 40, 30),
-                  borderRadius: BorderRadius.circular(12)),
-              child: const Center(
-                child: Text(
-                  'Enter Shop',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-          )
         ],
       ),
     );
